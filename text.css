@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+}
+
+.pop-text {
+    font-family: 'Poppins', sans-serif; /* Unique font */
+    font-size: 50px;
+    color: #ff69b4; /* Pink color for a vibrant look */
+    text-align: center;
+    animation: pop 2s ease-out forwards;
+    position: absolute;
+    top: 20px; /* Aligns text to top of the page */
+    opacity: 0;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
